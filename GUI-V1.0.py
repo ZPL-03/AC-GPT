@@ -5001,7 +5001,7 @@ class LaminatePage(_BaseLevelPage):
         right = QGroupBox('结果与可视化')
         rv = QVBoxLayout(right)
         # 1. Matplotlib 画布 (用于显示3D图)
-        self.fig_res = Figure(figsize=(5, 4), tight_layout=True)
+        self.fig_res = Figure(figsize=(5, 4))
         self.ax_res = self.fig_res.add_subplot(111, projection='3d')
         self.canvas_res = FigureCanvas(self.fig_res)
         protect_canvas(self.canvas_res)
@@ -5045,7 +5045,6 @@ class LaminatePage(_BaseLevelPage):
 
             self.fig_res.clear()  # 清除整个Figure
             self.ax_res = self.fig_res.add_subplot(111, projection='3d')  # 重新创建3D轴
-            # self.ax_res.set_title('许用载荷空间 (尚无结果)')
             self.fig_res.suptitle('许用载荷空间 (尚无结果)', y=0.9)
 
             # 添加坐标轴标签和旋转
@@ -5164,7 +5163,6 @@ class LaminatePage(_BaseLevelPage):
             self.log('[INFO] 正在绘制3D曲面...')
             self.ax_res.clear()  # 清除 "尚无结果"
             surf = self.ax_res.plot_surface(ANGLE1, ANGLE2, Z, cmap='viridis', rstride=1, cstride=1, linewidth=0.1)
-            # self.ax_res.set_title('许用载荷空间')
             self.fig_res.suptitle('许用载荷空间', y=0.9)
 
             # 统一坐标轴标签和旋转
@@ -5297,7 +5295,6 @@ class LaminatePage(_BaseLevelPage):
                 # 重新绘制
                 self.ax_res.clear()
                 surf = self.ax_res.plot_surface(ANGLE1, ANGLE2, Z, cmap='viridis', rstride=1, cstride=1, linewidth=0.1)
-                # self.ax_res.set_title('许用载荷空间')
                 self.fig_res.suptitle('许用载荷空间', y=0.9)
                 self.ax_res.set_xlabel('Angle1 (deg)')
                 self.ax_res.set_ylabel('Angle2 (deg)')

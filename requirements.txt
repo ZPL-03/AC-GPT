@@ -1,0 +1,32 @@
+# 航空复合材料多尺度智能设计平台 - 依赖包列表
+
+# GUI框架
+PyQt6>=6.4.0
+PyQt6-Qt6>=6.4.0
+
+# 深度学习框架
+tensorflow>=2.10.0
+keras>=2.10.0
+
+# 科学计算
+numpy>=1.23.0
+scipy>=1.9.0
+pandas>=1.5.0
+
+# 图像处理
+opencv-python>=4.7.0
+Pillow>=9.3.0
+
+# 机器学习
+scikit-learn>=1.2.0
+
+# 数据可视化
+matplotlib>=3.6.0
+plotly>=5.11.0
+
+# 文件处理
+openpyxl>=3.0.10
+xlrd>=2.0.1
+
+# 其他工具
+defusedxml>=0.7.1

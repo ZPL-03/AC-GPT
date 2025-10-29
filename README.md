@@ -260,14 +260,14 @@ python GUI-V1_0.py
   title={航空复合材料多尺度智能设计平台},
   author={Zhengpeng Liu},
   year={2025},
-  url={https://github.com/yourusername/composite-design-platform}
+  url={https://github.com/ZPL-03/composite-design-platform}
 }
 ```
 
 ## 联系方式
 
-- 项目主页: https://github.com/yourusername/composite-design-platform
-- 问题反馈: https://github.com/yourusername/composite-design-platform/issues
+- 项目主页: https://github.com/ZPL-03/composite-design-platform
+- 问题反馈: https://github.com/ZPL-03/composite-design-platform/issues
 - 电子邮件: your.email@example.com
 
 ## 致谢
